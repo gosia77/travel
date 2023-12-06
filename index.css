@@ -108,8 +108,9 @@ a {
 
 .logo {
   font: var(--ff-primary);
-  margin-left: 0 auto;
+  margin: 0 auto;
   color: var(--cl-fff);
+  text-align: center;
 }
 
 .top-menu {
@@ -150,10 +151,21 @@ a {
 
 
 .background-container {
+  position: relative;
   background-image: url(img/image\ 1.png);
+  background-repeat: no-repeat;
   width: 95rem;
   height: 58rem;
-  background-repeat: no-repeat;
+}
+
+.background-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; /* mozna zmienic wysokosc tego linear-gradient */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
 }
 
 
@@ -218,14 +230,17 @@ li:hover::after {
     align-items: center;
     padding: 2rem;
     letter-spacing: 2px;
-    margin: 1rem 3rem 3rem 3rem;
+    margin: 1rem 3rem;
   }
 
   .logo {
     font-size: var(--fs-2);
     font-weight: var(--fw-2);
     font-family: var(--ff-primary);
+    
   }
+
+  /* the last li in top navigation */
 
   .last-li {
     font-weight: var(--fw-2);

@@ -15,5 +15,5 @@ if (vw < 1024) {
         line2.classList.toggle('line2-active');
         line3.classList.toggle('line3-active');
 
-        });
-    }
+    });
+}
