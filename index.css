@@ -13,6 +13,7 @@
   --fw-2: 700;
 
   --cl-fff: #fff;
+  --cl-blue: #2659C3;
 
 
 
@@ -59,8 +60,6 @@ a {
   align-items: center;
 }
 
-/* if not good delete */
-
 /* hamburger*/
 
 .hamburger {
@@ -70,7 +69,10 @@ a {
   width: 2rem;
   height: 2rem;
   padding: 2px;
+  margin-left: 1rem;
 }
+
+/* lines of hamburger */
 
 .line {
   display: flex;
@@ -84,9 +86,7 @@ a {
 }
 
 .line1 {
-
   width: 20px;
-
 }
 
 .line2 {
@@ -98,7 +98,7 @@ a {
   width: 20px;
 }
 
-
+/*  */
 
 .primery-section {
   display: flex;
@@ -110,19 +110,21 @@ a {
   font: var(--ff-primary);
   margin: 0 auto;
   color: var(--cl-fff);
-  text-align: center;
 }
+
+/* w razie czego tu cofnij */
+
 
 .top-menu {
   display: flex;
   flex-direction: column;
-  gap: 5px;
   transform: translateX(-100%);
   transition: .5s ease;
   font-family: var(--ff-primary);
   font-size: var(--fs-1);
   color: var(--cl-fff);
-  padding: 1rem;
+
+
 
 }
 
@@ -133,19 +135,22 @@ a {
 .top-menu-active {
   transform: translateX(10px);
   background-color: transparent;
+  
 }
 
-.line1-active {
+/* active line of hamburger */
 
+.line1-active {
   transform: translateY(4px) rotate(-45deg);
+
 }
 
 .line2-active {
   transform: scaleX(0);
+
 }
 
 .line3-active {
-
   transform: translateY(-4px) rotate(45deg);
 }
 
@@ -154,8 +159,7 @@ a {
   position: relative;
   background-image: url(img/image\ 1.png);
   background-repeat: no-repeat;
-  width: 95rem;
-  height: 58rem;
+
 }
 
 .background-container::after {
@@ -164,18 +168,18 @@ a {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 20%; /* mozna zmienic wysokosc tego linear-gradient */
+  height: 20%;
+  /* mozna zmienic wysokosc tego linear-gradient */
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
 }
 
 
-.navigation-section {}
-
-/* underline for menu elements */
+/* underline for menu elements and also space between li elements*/
 .top-menu li {
   position: relative;
   cursor: pointer;
-  margin: 10px;
+  margin: 5px;
+  font-size: var(--fs-1);
 }
 
 li::after {
@@ -218,10 +222,10 @@ li:hover::after {
     display: none;
   }
 
-  .background-container {
+  /* .background-container {
     flex-direction: row;
     justify-content: space-between;
-  }
+  } */
 
   .navigation {
     width: 95rem;
@@ -237,7 +241,6 @@ li:hover::after {
     font-size: var(--fs-2);
     font-weight: var(--fw-2);
     font-family: var(--ff-primary);
-    
   }
 
   /* the last li in top navigation */
@@ -245,5 +248,92 @@ li:hover::after {
   .last-li {
     font-weight: var(--fw-2);
   }
+
+}
+
+/* header */
+
+.header {
+  margin-left: 1rem;
+}
+
+.header-content {
+  font-size: var(--fs-2);
+  color: var(--cl-fff);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-2);
+  margin: 0;
+}
+
+/*  */
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.40);
+  backdrop-filter: blur(16.000154495239258px);
+  width: 90%;
+  margin-left: 1rem;
+  background-color: transparent;
+  border: none;
+}
+
+.search-button input {
+  border: none;
+  background: transparent;
+  color: var(--cl-fff);
+  font-family: var(--ff-primary);
+}
+
+.akar-icons_search {
+  padding: 2px;
+}
+
+.search-button input::placeholder {
+  color: var(--cl-fff);
+  opacity: 0.7; 
+}
+
+/* Kalendarz */
+input[type="date"] {
+  color: var(--cl-fff);
+  background: rgba(255, 255, 255, 0.40);
+  backdrop-filter: blur(16.000154495239258px);
+  background-color: transparent;
+  font-family: var(--ff-primary);
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  
+}
+
+/* Gdy pole jest aktywne (po kliknięciu) */
+input[type="date"]:focus {
+  color: var(--cl-fff); /* Zmień kolor tekstu na widoczny po kliknięciu */
+}
+
+/* Ikona kalendarza */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  content: url('img/akar-icons_calendar.png'); /* Dodaj ścieżkę do ikony kalendarza */
+  display: block;
+  width: 10px; /* Dostosuj szerokość ikony */
+  height: 10px; /* Dostosuj wysokość ikony */
+  
+}
+
+.search-button:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
