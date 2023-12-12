@@ -162,13 +162,11 @@ a {
 
 .background-container {
   position: relative;
-  background-image: url(img/image\ 1.png);
+  background-image: url(img/mountains.png);
   background-repeat: no-repeat;
   max-width: 100%;
-  height: auto;
   vertical-align: middle;
   background-size: cover;
-  shape-margin: 0.75rem;
   border: 2px solid red;
 }
 
@@ -314,7 +312,7 @@ li:hover::after {
   opacity: 0.7;
 }
 
-Kalendarz input[type="date"] {
+input[type="date"] {
   color: var(--cl-fff);
   background: rgba(255, 255, 255, 0.40);
   backdrop-filter: blur(16.000154495239258px);
@@ -412,7 +410,7 @@ input[type="text"] {
     padding: 0.5rem;
     border-radius: 0.5rem; 
     color: var(--cl-fff);
-    
+    cursor: pointer;
   }
   
 
