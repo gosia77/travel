@@ -169,7 +169,7 @@ a {
   vertical-align: middle;
   background-size: cover;
   shape-margin: 0.75rem;
-
+  border: 2px solid red;
 }
 
 .background-container::after {
@@ -330,8 +330,6 @@ Kalendarz input[type="date"] {
 input[type="date"]::-webkit-calendar-picker-indicator {
   background: transparent;
   content: url('img/akar-icons_calendar.png');
-  /* Dodaj ścieżkę do ikony kalendarza */
-  /* display: block;  */
    /* Dostosuj szerokość ikony i wysokosc*/
   width: 20px;
   height: 20px;
@@ -378,6 +376,7 @@ input[type="text"] {
 @media (min-width: 1025px) {
   .header-content {
     font-size: var(--fs-5);
+    margin-left: 1rem;
   }
 
   .search-form,
@@ -397,6 +396,8 @@ input[type="text"] {
     background-color: rgba(255, 255, 255, 0.40);
     backdrop-filter: blur(16.000154495239258px);
     padding: 1rem;
+    margin-left: 1rem;
+    
   }
 
   input[type="text"],
@@ -410,6 +411,8 @@ input[type="text"] {
     color: var(--cl-fff);
     padding: 0.5rem;
     border-radius: 0.5rem; 
+    color: var(--cl-fff);
+    
   }
   
 
@@ -423,8 +426,8 @@ input[type="text"] {
     width: 85%;
     background-color: transparent;
     color: var(--cl-fff);
-    padding: 5rem;
     gap: 1rem;
+    cursor: pointer;
   }
 
   input[type="date"]::-webkit-calendar-picker-indicator {
