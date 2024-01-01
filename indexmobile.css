@@ -21,6 +21,7 @@
   --gap-2: 2rem;
   --gap-3: 3rem;
 
+  --padding-003: 3px;
   --padding-0: 1.5rem;
   --padding-1: 1rem;
   --padding-1-5: 1.5rem;
@@ -58,8 +59,7 @@ svg {
 }
 
 ul,
-li,
-a {
+li {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -133,7 +133,7 @@ a {
   color: var(--cl-fff);
 }
 
-a {
+.font-1rem > a {
   color: var(--cl-fff);
   font-size: var(--fs-1);
 }
@@ -337,14 +337,14 @@ input[type="text"] {
   grid-auto-columns: 21%;
   overflow: hidden;
   gap: var(--gap-1);
-  /* overflow-x: auto; */
+ 
   overscroll-behavior-inline: contain;
 }
 
 .card {
   display: grid;
   grid-template-rows: min-content;
-  padding: 3px;
+  padding: var(--padding-003);
   justify-items: center;
   align-items: center;
   gap: var(--gap-1);
@@ -415,40 +415,52 @@ input[type="text"] {
 
 /* bottom-navigation */
 
-.bottom-navigation {
-  display: grid;
-  grid-template-rows: min-content;
- 
- 
-}
 
-.bottom-navigation-element {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 55%;
-  padding: 0 var(--padding-1-5);
-  gap: var(--gap-1);
-  color: var(--crl-black);
+
+.bottom-navigation-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   place-items: center;
+  padding: var(--padding-1);
+  gap: var(--gap-1-5);
+  color: var(--crl-black);
+}
+
+.bottom-navigation-flex > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  place-items: center;
+  
+}
+
+.bottom-navigation-flex > a {
+  color: var(--crl-black);
+  opacity: 0.4;
 }
 
 
-.bottom-navigation-element>a {
+.bottom-navigation-element > a {
+  
+}
+
+.nav-bottom-flow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bottom-flow > a {
   font-family: var(--ff-secondary);
   color: var(--crl-black);
   opacity: 0.4;
   font-weight: var(--fw-1);
   font-size: var(--fs-05);
+  text-decoration: none;
+  padding: var(--padding-003);
 }
 
-.bottom-navigation-element:nth-child(2)>img {
-  opacity: 0.4;
-}
-
-.bottom-navigation-element:nth-child(3)>img {
-  opacity: 0.4;
-}
-
-.bottom-navigation-element:nth-child(4)>img {
-  opacity: 0.4;
+.a-blue {
+  color: var(--crl-blue);
 }
