@@ -53,8 +53,6 @@ img,
 svg {
   max-width: 100%;
   height: auto;
-  background-size: cover;
-  shape-margin: 0.75rem;
   display: block;
 }
 
@@ -163,7 +161,6 @@ li {
   position: relative;
   background: url(img/mountains.png) no-repeat;
   background-size: cover;
-  /* border: 2px solid red; */
 }
 
 .background-container::after {
@@ -306,7 +303,7 @@ input[type="text"] {
 }
 
 .search-form-0 {
-  opacity: 0;
+  display: none;
 }
 
 .mobile-blue-button {
@@ -375,12 +372,9 @@ input[type="text"] {
 /* top categories for desktop and mobile version */
 
 .top-categories-desktop {
-  opacity: 0;
-}
+  display: none;
+} 
 
-.top-categories-mobile {
-  opacity: 1;
-}
 /*  */
 
 .media-scroller {

@@ -40,8 +40,6 @@ img,
 svg {
     max-width: 100%;
     height: auto;
-    background-size: cover;
-    shape-margin: 0.75rem;
     display: block;
 }
 
@@ -128,7 +126,7 @@ li {
     }
 
     .search-form-0 {
-        opacity: 1;
+        /* opacity: 1; */
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -202,7 +200,7 @@ li {
     }
 
     .mobile-blue-button {
-        opacity: 0;
+        display: none;
     }
 
 }
@@ -211,7 +209,6 @@ li {
 
 @media (min-width: 1025px) {
     .top-categories-desktop {
-        opacity: 1;
         color: var(--cl-fff);
         font-family: var(--ff-primary);
         font-size: var(--fs-2);
@@ -229,7 +226,7 @@ li {
     }
 
     .top-categories-mobile {
-        opacity: 0;
+        display: none;
     }
 
     .media-destenations-header {
