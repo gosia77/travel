@@ -10,8 +10,8 @@
     --fs-2: 2rem;
     --fs-5: 5rem;
 
-    --fw-1: 400;
-    --fw-2: 700;
+    --fw-400: 400;
+    --fw-700: 700;
 
     --cl-fff: #fff;
     --cl-blue: #2659C3;
@@ -107,7 +107,7 @@ li {
 
     .last-li {
         font-weight: var(--fw-2);
-        
+
     }
 
 }
@@ -210,13 +210,29 @@ li {
 /* top categories for desktop and mobile version */
 
 @media (min-width: 1025px) {
-.top-categories-desktop {
-    opacity: 1;
-}
+    .top-categories-desktop {
+        opacity: 1;
+        color: var(--cl-fff);
+        font-family: var(--ff-primary);
+        font-size: var(--fs-2);
+        font-weight: var(--fw-2);
+        overflow-x: auto;
+        white-space: nowrap;
+        overscroll-behavior-inline: contain;
+    }
 
-.top-categories-mobile {
-    opacity: 0;
-}
+    .card > p {
+        font-size: var(--fs-1);
+        font-family: var(--ff-primary);
+        color: var(--cl-fff);
+        font-weight: var(--fw-400);
+    }
 
-}
+    .top-categories-mobile {
+        opacity: 0;
+    }
 
+    .media-destenations-header {
+
+    }
+}
