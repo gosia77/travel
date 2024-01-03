@@ -208,7 +208,11 @@ li {
 /* top categories for desktop and mobile version */
 
 @media (min-width: 1025px) {
-    .top-categories-desktop {
+    .top-categories {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: var(--cl-fff);
         font-family: var(--ff-primary);
         font-size: var(--fs-2);
@@ -225,9 +229,7 @@ li {
         font-weight: var(--fw-400);
     }
 
-    .top-categories-mobile {
-        display: none;
-    }
+   
 
     .media-destenations-header {
 
