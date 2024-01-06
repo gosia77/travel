@@ -17,46 +17,6 @@
     --cl-blue: #2659C3;
 }
 
-/* global settgings */
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    color-scheme: light dark;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-img,
-svg {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-ul,
-li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* megia query desktop for top navigation */
 
 @media (min-width: 1025px) {
@@ -67,13 +27,19 @@ li {
         justify-content: space-between;
         align-items: center;
         transition: .3s ease;
-        transform: translateX(0%);
+        right: 0;
+        left: 60%;
+        background-color: transparent;
         margin-right: 1rem;
         padding: 1rem;
         font-family: var(--ff-primary);
         font-size: var(--fs-1);
         color: var(--cl-fff);
         gap: 2rem;
+    }
+
+    .top-menu a { 
+        color: var(--cl-fff);
     }
 
     .hamburger {
@@ -85,8 +51,14 @@ li {
       justify-content: space-between;
     } */
 
+    /* TODO: icon invert */
+
+    .card img {
+        filter: invert(0);
+    }
+
     .navigation {
-        width: 95rem;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -117,27 +89,61 @@ li {
         margin: 0 auto;
     }
 
-    .search-form,
-    .search-form:nth-child(1),
-    .search-form:nth-child(2),
-    .search-form:nth-child(3),
-    .search-form:nth-child(4) {
-        display: none;
+    .navigation-wrapper {
+        padding-bottom: 600px;
     }
 
-    .search-form-0 {
+    main {
+        margin-top: -600px;
+      }
+
+    .media-destenations{
+        position: relative;
+    }
+
+    .search-box {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .search-form {
+        border-radius: 0;
+    }
+
+    .search-form-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        border: none;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .search-form:last-of-type {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .search-form:first-of-type {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+
+    .search-form {
         /* opacity: 1; */
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 5rem;
-        background-color: rgba(255, 255, 255, 0.40);
-        backdrop-filter: blur(16.000154495239258px);
         padding: 1rem;
-        margin: 0 auto;
         font-family: var(--ff-primary);
-        width: 77rem;
+        margin: 0;
     }
 
 
@@ -171,7 +177,7 @@ li {
     }
 
     input[type="date"]::-webkit-calendar-picker-indicator {
-        width: 20px;
+
         height: 20px;
         text-align: center;
     }
@@ -184,7 +190,7 @@ li {
         cursor: pointer;
     }
 
-    .desktop-white-button {
+    .mobile-blue-button {
         width: 10rem;
         padding: 5px;
         background-color: var(--cl-fff);
@@ -199,9 +205,6 @@ li {
 
     }
 
-    .mobile-blue-button {
-        display: none;
-    }
 
 }
 
@@ -209,10 +212,6 @@ li {
 
 @media (min-width: 1025px) {
     .top-categories {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         color: var(--cl-fff);
         font-family: var(--ff-primary);
         font-size: var(--fs-2);
@@ -222,16 +221,36 @@ li {
         overscroll-behavior-inline: contain;
     }
 
-    .card > p {
+    .card>p {
         font-size: var(--fs-1);
         font-family: var(--ff-primary);
         color: var(--cl-fff);
         font-weight: var(--fw-400);
     }
 
-   
 
-    .media-destenations-header {
 
+    .media-scroller {
+
+       display: flex;
+        overflow-x: auto;
+        /* overscroll-behavior-inline: contain; */
+        /* aspect-ratio: auto 9 / 16; */
     }
+
+    .bottom-navigation-flex {
+        display: none;
+    }
+
+    .media-element {
+        display: flex;
+        flex: 0 0 21rem;
+    }
+
+    .media-element>img {
+       width: 100%;
+       height: 100%;
+        object-fit: cover;
+      }
+
 }

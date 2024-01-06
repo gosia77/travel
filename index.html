@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="indexmobile.css">
     <link rel="stylesheet" href="indexdesktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +17,10 @@
 </head>
 
 <body>
-
-    <nav class="navigation-section">
-        <!-- background-container -->
+    <div class="navigation-wrapper">
         <div class="background-container">
+            <img src="./img/mountains.jpg" alt="background">
+        </div>
             <nav class="navigation">
                 <!-- hamburger menu -->
                 <div class="primery-section">
@@ -28,42 +29,43 @@
                         <span class="line line2"></span>
                         <span class="line line3"></span>
                     </div>
-
+    
                     <div class="logo">
                         <h3>trxvl.</h3>
                     </div>
                 </div>
-
-                <div class="top-navigation ">
-                    <ul class="top-menu">
-                        <li class="font-1rem">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="font-1rem">
-                            <a href="stays.html">Stays</a>
-                        </li>
-                        <li class="font-1rem">
-                            <a href="flights.html">Flights</a>
-                        </li>
-                        <li class="font-1rem">
-                            <a href="packages.html">Packages</a>
-                        </li>
-                        <li class="font-1rem">
-                            <a href="signUp.html" class="last-li">Sign Up</a>
-                        </li>
-                    </ul>
-                </div>
-
-
+    
+                <ul class="top-menu">
+                    <li class="font-1rem">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="font-1rem">
+                        <a href="stays.html">Stays</a>
+                    </li>
+                    <li class="font-1rem">
+                        <a href="flights.html">Flights</a>
+                    </li>
+                    <li class="font-1rem">
+                        <a href="packages.html">Packages</a>
+                    </li>
+                    <li class="font-1rem">
+                        <a href="signUp.html" class="last-li">Sign Up</a>
+                    </li>
+                </ul>
             </nav>
+        
+    </div>
 
+    <main>
+        
+        <div class="hero">
             <div class="header">
                 <h1 class="header-content">The whole world <br> awaits.</h1>
             </div>
-
-            <div class="search-box">
+    
+            <form class="search-box">
                 <!--form 0 -->
-                <form class="search-form-0">
+                <!-- <div class="search-form-0">
                     <input type=" text" placeholder="Search destinations, hotels">
                     <input type="date" class="calendar" name="checkIn">
                     <input type="date" class="calendar" name="checkOut">
@@ -72,20 +74,20 @@
                         <input type="text" placeholder="1 room, 2 adults">
                     </div>
                     <button type="button" class="desktop-white-button">Search</button>
-                </form>
-
-
+                </div> -->
+    
+    
                 <!--form 1 -->
-                <form class="search-form">
+                <div class="search-form">
                     <span class="akar-icons_search">
                         <img src="img/akar-icons_search (1).png" alt="">
                     </span>
                     <input type="text" placeholder="Search destinations, hotels">
-                </form>
-
+                </div>
+    
                 <!--form 2 -->
-                <form class="search-form">
-
+                <div class="search-form">
+    
                     <div class="calendar-box">
                         <input type="date" class="calendar" name="checkIn">
                         <!-- <input type="text" placeholder="Check in" class=""> -->
@@ -99,21 +101,22 @@
                         <input type="date" class="calendar" name="checkOut">
                         <!-- <input type="text" placeholder="Check out"> -->
                     </div>
-                </form>
-
+                </div>
+    
                 <!--form 3 -->
-                <form class="search-form">
+                <div class="search-form">
                     <span class="akar-icons_search">
                         <img src="img/fontisto_male (1).png" alt="">
                     </span>
-                    <input type="text" placeholder="1 room, 2 adults">
-                </form>
-
+                    <input type="text" placeholder="1 room, 2 adults" name="room">
+                </div>
+    
                 <!--form 4 -->
-                <button class="mobile-blue-button">Search</button>
-            </div>
+                <div class="search-form-button">
+                    <button type="submit" class="mobile-blue-button">Search</button>
+                </div>
+            </form>
         </div>
-
         <!--  -->
         <div class="top-categories">
             <div class="scroller-categories-title">
@@ -208,17 +211,36 @@
                     <img src="img/image 21.png" alt="Paris, France">
                     <figcaption>Paris, France</figcaption>
                 </div>
+                 <!-- 1 -->
+                 <div class="media-element">
+                    <img src="img/image 18.png" alt="Bali, Indonesia">
+                    <figcaption>Bali, Indonesia</figcaption>
+                </div>
+
+                <!-- 2 -->
+                <div class="media-element">
+                    <img src="img/image 19.png" alt="Kerry, Ireland">
+                    <figcaption>Kerry, Ireland</figcaption>
+                </div>
+
+                <!-- 3 -->
+                <div class="media-element">
+                    <img src="img/image 20.png" alt="Sydney, Australia">
+                    <figcaption>Sydney, Australia</figcaption>
+                </div>
+
+                <!-- 4 -->
+                <div class="media-element">
+                    <img src="img/image 21.png" alt="Paris, France">
+                    <figcaption>Paris, France</figcaption>
+                </div>
+
 
 
             </div>
         </div>
 
-    </nav>
 
-    <main>
-        
-
-        
     </main>
 
     <footer>
