@@ -465,7 +465,7 @@ main {
 .media-element figcaption {
   position: absolute;
   bottom: 1rem;
-  left: 1.5rem;
+  /* left: 1.5rem; */
   font-size: var(--ff-primary);
   font-size: var(--fs-1);
   color: var(--crl-white);
