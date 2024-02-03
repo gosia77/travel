@@ -231,7 +231,7 @@
     .media-element {
         display: flex;
         flex: 0 0 21rem;
-
+        position: relative;
     }
 
     .media-element>img {
@@ -251,9 +251,19 @@
         margin: 10px 10px 10px 16px;
     }
 
-    .media-scroller figcaption {
+    .media-scroller {
         font-family: var(--ff-secondary);
 
     }
+    .text-block {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: var(--cl-fff);
+
+    }
+
+    
+
 
 }

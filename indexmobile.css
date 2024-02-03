@@ -444,6 +444,10 @@ main {
 }
 
 /*  */
+
+.media-destenations-header {
+  margin-left: 1rem;
+}
 .media-scroller {
 
   display: flex;
@@ -454,7 +458,8 @@ main {
 .media-element {
    display: flex;
    flex: 0 0 21rem;
-   
+  position: relative;
+  margin-left: 1rem;
 }
 
 .media-element>img {
@@ -463,12 +468,13 @@ main {
    object-fit: cover;
  }
 
-.media-element figcaption {
+
+
+
+.text-block {
   position: absolute;
   bottom: 1rem;
-  /* left: 1.5rem; */
-  font-size: var(--ff-primary);
-  font-size: var(--fs-1);
+  left: 1rem;
   color: var(--crl-white);
 }
 
