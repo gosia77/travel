@@ -2,12 +2,13 @@
 
 :root {
     --ff-primary: 'Roboto', sans-serif, 'Roboto Mono', monospace;
-    --ff-secondary: 'Bebas Neue', sans-serif;
+    --ff-secondary: 'Martel Sans', sans-serif;
 
     --fs-05: 0.5rem;
     --fs-0: 1rem;
     --fs-1: 1.5rem;
     --fs-2: 2rem;
+    --fs-25: 2.5rem;
     --fs-5: 5rem;
 
     --fw-400: 400;
@@ -15,11 +16,14 @@
 
     --cl-fff: #fff;
     --cl-blue: #2659C3;
+    --cl-black:#000000;
+
 }
 
 /* megia query desktop for top navigation */
 
 @media (min-width: 1025px) {
+
 
     .top-menu {
         display: flex;
@@ -216,7 +220,7 @@
         color: var(--cl-fff);
         font-weight: var(--fw-400);
     }
-    
+
 
     .media-scroller {
         display: flex;
@@ -255,6 +259,7 @@
         font-family: var(--ff-secondary);
 
     }
+
     .text-block {
         position: absolute;
         bottom: 1rem;
@@ -263,7 +268,62 @@
 
     }
 
-    
+    .media-offers {
+        display: inline;
+        background-color: transparent;
+        border-radius: none;
+    }
 
+    .media-offers-header {
+        font-family: var(--ff-primary);
+        font-size: var(--fs-2);
+        margin-left: 1rem;
+        font-weight: var(--fw-700);
+        margin: 2rem;
+    }
 
+    .card-flex {
+        display: flex;
+        margin-left: 1rem;
+        padding: 1rem;
+        border: none;
+        gap: 1rem;
+        box-shadow: 0px -1px 17px -8px rgba(66, 68, 90, 1);
+        border-radius: 1rem;
+    }
+
+    .img-br-1rem img {
+        border-radius: 1rem;
+    }
+
+    .card-flex p {
+        margin-top: 1rem;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .card-components p {
+        font-family: var(--ff-secondary);
+        font-size: 15px;
+        color: var(--cl-black);
+        opacity: 50%;
+    }
+
+    .card-components h4 {
+        font-family: var(--ff-secondary);
+        color: var(--cl-black); 
+    }
+
+    .blue-but {
+        background-color: var(--cl-blue);
+        border-radius: 2rem;
+        padding: 1rem;
+        color: var(--cl-fff);
+        border: none;
+        font-family: var(--ff-secondary);
+        font-size: 15px;
+        text-align: center;
+    }
 }

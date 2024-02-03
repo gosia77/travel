@@ -531,3 +531,7 @@ main {
 a.crl-blue {
   color: var(--crl-blue);
 }
+
+.media-offers {
+  display: none;
+}
