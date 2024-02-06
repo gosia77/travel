@@ -339,7 +339,7 @@
         position: relative;
         display: flex;
         gap: 1rem;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 
     .property-type-container p {
@@ -349,7 +349,6 @@
         padding: 1rem;
         font-family: var(--ff-secondary);
         font-weight: var(--fw-500);
-
     }
 
     .property-type-container img {
@@ -365,7 +364,7 @@
 
     .browser-type-2rem h4 {
         font-size: 2rem;
-        margin-left: 1rem;
+        margin-left: 2rem;
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);
     }
@@ -404,25 +403,26 @@
 
     .card-disp-flex {
         display: flex;
-        gap: 2rem;
-        margin-left: 1rem;
-
+        gap: 1rem;
+        margin-left: 2rem;
+        padding: 1rem;
     }
 
     .card1 {
         box-shadow: 0px 0px 17px -7px rgba(66, 68, 90, 1);  
         border-radius: 10px;
+        padding: 1rem;
     }
 
     .card-fs-1rem h4 {
         font-family: var(--ff-secondary);
         font-size: var(--fs-1);
         color: var(--cl-black);
-        margin: 15px;
+        margin: 8px;
     }
 
     .card-fs-1rem p {
-        margin: 15px;
+        margin: 8px;
         color: var(--cl-black);
         opacity: 50%;
         font-family: var(--ff-secondary);
@@ -436,7 +436,12 @@
     }
 
     .travelers-community h3 {
-        margin-left: 1rem;
+        margin-left: 2rem;
+        font-family: var(--ff-primary);
+        font-size: var(--fs-2);
+        font-weight: var(--fw-700);
+        color: var(--cl-black);
+        padding: 5px;
     }
 
 }
