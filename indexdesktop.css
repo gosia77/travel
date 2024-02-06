@@ -9,14 +9,16 @@
     --fs-1: 1.5rem;
     --fs-2: 2rem;
     --fs-25: 2.5rem;
+    --fs-4: 4rem;
     --fs-5: 5rem;
 
     --fw-400: 400;
     --fw-700: 700;
+    --fw-500: 500;
 
     --cl-fff: #fff;
     --cl-blue: #2659C3;
-    --cl-black:#000000;
+    --cl-black: #000000;
 
 }
 
@@ -66,10 +68,11 @@
         margin: 0 auto;
     }
 
-    .logo {
+    .logo h3 {
         font-size: var(--fs-2);
         font-weight: var(--fw-2);
         font-family: var(--ff-primary);
+        color: var(--cl-fff);
     }
 
     /* the last li in top navigation */
@@ -98,6 +101,10 @@
 
     .media-destenations {
         position: relative;
+    }
+
+    .media-destenations h3 {
+        color: var(--cl-fff);
     }
 
     .search-box {
@@ -249,7 +256,7 @@
     }
 
     h3 {
-        color: var(--cl-fff);
+        color: var(--cl-black);
         font-family: var(--ff-primary);
         font-size: var(--fs-2);
         margin: 10px 10px 10px 16px;
@@ -287,7 +294,7 @@
         margin-left: 1rem;
         padding: 1rem;
         border: none;
-        gap: 1rem;
+        gap: 10px;
         box-shadow: 0px -1px 17px -8px rgba(66, 68, 90, 1);
         border-radius: 1rem;
     }
@@ -313,7 +320,7 @@
 
     .card-components h4 {
         font-family: var(--ff-secondary);
-        color: var(--cl-black); 
+        color: var(--cl-black);
     }
 
     .blue-but {
@@ -325,5 +332,111 @@
         font-family: var(--ff-secondary);
         font-size: 15px;
         text-align: center;
+        cursor: pointer;
     }
+
+    .property-type-container {
+        position: relative;
+        display: flex;
+        gap: 1rem;
+        margin-left: 1rem;
+    }
+
+    .property-type-container p {
+        position: absolute;
+        bottom: 2rem;
+        color: var(--cl-fff);
+        padding: 1rem;
+        font-family: var(--ff-secondary);
+        font-weight: var(--fw-500);
+
+    }
+
+    .property-type-container img {
+        border-radius: 5px;
+        width: 345px;
+        height: 100%;
+    }
+
+    .bottom-left p {
+        position: absolute;
+        bottom: 1rem;
+    }
+
+    .browser-type-2rem h4 {
+        font-size: 2rem;
+        margin-left: 1rem;
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-700);
+    }
+
+    .map-container {
+        position: relative;
+        padding: 5rem;
+        margin: 0 auto;
+    }
+
+    .map-position-absolute {
+        position: absolute;
+        top: 8rem;
+        padding: 5rem;
+        color: var(--cl-fff);
+        font-family: var(--ff-primary);
+    }
+
+    .map-container img {
+        border-radius: 1rem;
+    }
+
+    .map-position-absolute h3 {
+        color: var(--cl-fff);
+        font-family: var(--ff-primary);
+        font-size: var(--fs-4);
+        font-weight: var(--fw-700);
+    }
+
+    .map-position-absolute p {
+        margin-left: 1rem;
+        font-family: var(--ff-secondary);
+        font-weight: var(--fw-400);
+        font-size: var(--fs-2);
+    }
+
+    .card-disp-flex {
+        display: flex;
+        gap: 2rem;
+        margin-left: 1rem;
+
+    }
+
+    .card1 {
+        box-shadow: 0px 0px 17px -7px rgba(66, 68, 90, 1);  
+        border-radius: 10px;
+    }
+
+    .card-fs-1rem h4 {
+        font-family: var(--ff-secondary);
+        font-size: var(--fs-1);
+        color: var(--cl-black);
+        margin: 15px;
+    }
+
+    .card-fs-1rem p {
+        margin: 15px;
+        color: var(--cl-black);
+        opacity: 50%;
+        font-family: var(--ff-secondary);
+    }
+
+    .card1-image img {
+        width: 310px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .travelers-community h3 {
+        margin-left: 1rem;
+    }
+
 }
