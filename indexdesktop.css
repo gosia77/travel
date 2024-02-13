@@ -172,7 +172,7 @@
         justify-content: space-between;
         align-items: center;
         background: rgba(255, 255, 255, 0.40);
-        backdrop-filter: blur(16.000154495239258px);
+        backdrop-filter: blur(16px);
         border-radius: var(--fs-1);
         width: 85%;
         background-color: transparent;
@@ -355,6 +355,7 @@
         border-radius: 5px;
         width: 345px;
         height: 100%;
+        box-shadow: 0px 0px 21px -12px rgba(66, 68, 90, 1);
     }
 
     .bottom-left p {
@@ -409,7 +410,7 @@
     }
 
     .card1 {
-        box-shadow: 0px 0px 17px -7px rgba(66, 68, 90, 1);  
+        box-shadow: 0px 0px 17px -7px rgba(66, 68, 90, 1);
         border-radius: 10px;
         padding: 1rem;
     }
@@ -442,6 +443,171 @@
         font-weight: var(--fw-700);
         color: var(--cl-black);
         padding: 5px;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .footer-img img {
+        /* margin-top: 2rem; */
+        margin-bottom: 0;
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+
+    .img-iphone13 img {
+        position: relative;
+        left: 10rem;
+        bottom: -8.5rem;
+    }
+
+    .footer-content {
+        position: relative;
+        left: 10rem;
+        bottom: 2rem;
+    }
+
+    .footer-content h3 {
+        color: var(--cl-fff);
+        font-family: var(--ff-primary);
+
+    }
+
+    .footer-content p {
+        color: var(--cl-fff);
+        font-family: var(--ff-primary);
+        position: relative;
+        left: 1rem;
+    }
+
+    .footer-contact {
+        position: relative;
+        right: 16rem;
+        top: 8rem;
+        display: flex;
+
+    }
+
+    .footer-paragraph-padd3 {
+        padding: 3rem;
+        vertical-align: middle;
+    }
+
+    .footer-form p {
+        color: var(--cl-fff);
+        font-family: var(--ff-primary);
+    }
+
+    .footer-contact-column {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .button {
+        background-color: var(--cl-fff);
+        opacity: 40%;
+        border: none;
+        border-radius: 17px;
+        padding: 10px 15px;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        transition-duration: 0.4s;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span::after {
+        content: '';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .mobile-btn:hover {
+        color: var(--cl-blue);
+        background-color: var(--cl-fff);
+    }
+
+    .email-btn:hover {
+        color: var(--cl-blue);
+    }
+
+    .info {
+        position: relative;
+    }
+
+    .button .mobile-btn:hover {
+        visibility: hidden;
+    }
+
+    .info:after {
+        content: 'Enter your phone number to receive a text with a link to download the app. ';
+        display: none;
+        position: absolute;
+    }
+
+    .info {
+        color: var(--cl-fff);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-400);
+        font-size: var(--fs-0);
+    }
+
+    .footer-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.40);
+        backdrop-filter: blur(16px);
+        border-radius: var(--fs-1);
+        width: 100%;
+        color: var(--cl-fff);
+        gap: 1rem;
+    }
+
+    .footer-input button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        border: none;
+        gap: 10px;
+        padding: 10px;
+        width: 40%;
+        position: relative;
+        right: 1rem;
+        color: var(--cl-blue);
+        font-weight: var(--fw-700);
+        font-size: var(--fs-0);
+    }
+
+    .footer-paragraph-padd3 p {
+        color: var(--cl-fff);
+        text-align: center;
+        font-family: var(--ff-primary);
+        font-size: var(--fs-0);
+    }
+
+    .footer-apps a {
+        padding: 2rem;
     }
 
 }
