@@ -19,29 +19,77 @@
     --cl-fff: #fff;
     --cl-blue: #2659C3;
     --cl-black: #000000;
+    --cl-gray: #808080;
 
 }
 
 /* megia query desktop for top navigation */
 
-@media (min-width: 1025px) {
+@media (min-width: 1280px) {
+    .top-menu {
+       display: flex;
+       align-items: center;
+       justify-content: right;
+    }
+
+    .img-iphone13 img {
+        position: relative;
+        top: 5rem;
+    }
+
+    .footer-content {
+        position: relative;
+        top: 1rem;
+    }
+
+    .footer-contact-column {
+        position: relative;
+        top: 5rem;
+        left: 3rem;
+    }
+
+    .footer-paragraph-padd3 {
+        position: relative;
+        top: 5rem;
+        left: 6rem;
+    }
+
+    .footer-apps {
+        position: relative;
+        top: 5rem;
+        left: 8rem;
+    }
+
+    .footer-area-black {
+        position: relative;
+        top: 5rem;
+    }
+
+    .footer-card-end {
+        position: relative;
+        top: 7rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
 
 
     .top-menu {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
         transition: .3s ease;
         right: 0;
-        left: 60%;
+        /* left: 60%; */
         background-color: transparent;
-        margin-right: 1rem;
+        /* margin-right: 1rem; */
         padding: 0.5rem;
         font-family: var(--ff-primary);
         font-size: var(--fs-1);
         color: var(--cl-fff);
-        gap: 2rem;
+        /* gap: 2rem; */
     }
 
     .top-menu a {
@@ -61,11 +109,10 @@
     .navigation {
 
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
         padding: 0.5rem;
         letter-spacing: 2px;
-        margin: 0 auto;
     }
 
     .logo h3 {
@@ -82,10 +129,6 @@
         display: flex;
     }
 
-}
-
-
-@media (min-width: 1025px) {
     .header-content {
         font-size: var(--fs-5);
         margin: 0 auto;
@@ -206,11 +249,11 @@
         border: none;
         cursor: pointer;
     }
-}
 
-/* top categories for desktop and mobile version */
 
-@media (min-width: 1025px) {
+    /* top categories for desktop and mobile version */
+
+
     .top-categories {
         color: var(--cl-fff);
         font-family: var(--ff-primary);
@@ -376,7 +419,7 @@
         margin: 0 auto;
     }
 
-    .map-position-absolute {
+    .map-position-rel {
         position: absolute;
         top: 8rem;
         padding: 5rem;
@@ -385,17 +428,25 @@
     }
 
     .map-container img {
-        border-radius: 1rem;
+        border-radius: 2rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        width: 100%;
+
     }
 
-    .map-position-absolute h3 {
+    .map-position-rel h3 {
+        position: relative;
+        top: -6rem;
         color: var(--cl-fff);
         font-family: var(--ff-primary);
         font-size: var(--fs-4);
         font-weight: var(--fw-700);
     }
 
-    .map-position-absolute p {
+    .map-position-rel p {
+        position: relative;
+        top: -6rem;
         margin-left: 1rem;
         font-family: var(--ff-secondary);
         font-weight: var(--fw-400);
@@ -460,7 +511,7 @@
     .img-iphone13 img {
         position: relative;
         left: 10rem;
-        bottom: -8.5rem;
+        bottom: -9.5rem;
     }
 
     .footer-content {
@@ -486,12 +537,12 @@
         position: relative;
         right: 16rem;
         top: 8rem;
-        display: flex;
+
 
     }
 
     .footer-paragraph-padd3 {
-        padding: 3rem;
+      
         vertical-align: middle;
     }
 
@@ -581,6 +632,7 @@
         width: 100%;
         color: var(--cl-fff);
         gap: 1rem;
+        padding: 0.5rem;
     }
 
     .footer-input button {
@@ -597,6 +649,7 @@
         color: var(--cl-blue);
         font-weight: var(--fw-700);
         font-size: var(--fs-0);
+        cursor: pointer;
     }
 
     .footer-paragraph-padd3 p {
@@ -607,7 +660,250 @@
     }
 
     .footer-apps a {
+        padding: 1rem;
+    }
+
+    .footer-area-black {
+        background-color: var(--cl-black);
+        position: relative;
+        top: 9.3rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-card h1 {
+        color: var(--cl-fff);
+        margin-left: 4rem;
+    }
+
+    .footer-card {
+        color: var(--cl-gray);
+        background-color: var(--cl-black);
+        padding: 1rem;
+    }
+
+    .footer-card-end {
+        position: relative;
+        top: 15rem;
+        background-color: var(--cl-black);
+    }
+
+    .card-end {
+        color: var(--cl-gray);
+
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    .top-menu {
+        left: 50%;
+    }
+
+    .map-container img {
+        border-radius: 2rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .card1 {
         padding: 2rem;
     }
+
+    .img-iphone13 img {
+        position: relative;
+        top: 6rem;
+    }
+
+    .footer-contact-column {
+        position: relative;
+        left: -1rem;
+        top: 2rem;
+    }
+
+    .footer-content {
+        position: relative;
+        top: -4rem;
+
+    }
+
+    .footer-contact {
+        position: relative;
+        top: 11rem;
+    }
+
+    .footer-paragraph-padd3 {
+        position: relative;
+        top: -4rem;
+    }
+
+    .footer-apps {
+        position: relative;
+        top: -4rem;
+    }
+
+    .footer-area-black {
+        position: relative;
+        top: 6rem;
+    }
+
+    .footer-card {
+        padding: 1rem;
+    }
+
+    .footer-card-end {
+        position: relative;
+        top: 4rem;
+    }
+
+    .card-end {
+        position: relative;
+        left: 21rem;
+        top: 2rem;
+    }
+
+    .border-1px {
+        border-style: solid;
+        color: var(--cl-gray);
+        width: 10%;
+        padding: 1rem;
+    }
+
+    .card-end-img {
+        background-color: var(--cl-black);
+        width: 100%;
+    }
+
+    .card-end-position {
+        position: relative;
+        right: -40rem;
+        gap: 1rem;
+        bottom: 4rem;
+    }
+
+
+
+}
+
+
+@media (min-width: 2560px) {
+
+    .card-flex {
+        gap: 2rem;
+        width: 1300px;
+        height: 400px;
+    }
+
+    .img-br-1rem img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .offers-box {
+        gap: 2rem; 
+    }
+
+        .card-components p {
+            font-size: var(--fs-1);
+            margin: 0;
+            padding: 10px;
+        }
+
+        .card-components h4 {
+            font-size: var(--fs-25);
+            margin: 0;
+            padding: 10px;
+        }
+
+
+    .blue-but {
+        width: 30%;
+        font-size: var(--fs-1);
+    }
+
+    .blue-but1 {
+        margin-top: 4rem;
+    }
+
+    .map-position-rel h3 {
+        top: 2rem;
+    }
+
+    .map-position-rel p {
+        position: relative;
+        top: 4rem;
+    }
+
+    .card1-image img {
+        width: 520px;
+        height: 300px;
+    }
+
+    .card-disp-flex {
+        width: 100%;
+        height: auto;
+        gap: 2rem;
+        margin: 1rem;
+    }
+
+    .card1 {
+       flex: 1;
+    }
+
+    .card-fs-1rem {
+        padding: 1rem;
+    }
+
+
+    .footer-content {
+        position: relative;
+        top: 20rem;
+        left: -1rem;
+    }
+
+
+
+    .footer-contact {
+        position: relative;
+        top: 30rem;
+        left: -31rem;
+    }
+
+    .img-iphone13 img {
+        position: relative;
+        left: -10rem;
+        top: 30rem;
+    }
+
+
+
+    .footer-area-black {
+        background-color: var(--cl-black);
+        position: relative;
+        top: 30rem;
+    }
+
+
+
+    .footer-card-end {
+        position: relative;
+        top: 28rem;
+        
+       
+    }
+
+    .card-end {
+        position: relative;
+        left: 39rem;
+    }
+
+    .card-end-position {
+        position: relative;
+        width: 10%;
+        left: 145rem;
+    }
+
 
 }
