@@ -540,6 +540,8 @@ a.crl-blue {
   display: none;
 } */
 
-footer {
-  display: none;
+@media (max-width: 1023px) {
+  footer {
+    display: none;
+  }
 }

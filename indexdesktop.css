@@ -4,11 +4,13 @@
     --ff-primary: 'Roboto', sans-serif, 'Roboto Mono', monospace;
     --ff-secondary: 'Martel Sans', sans-serif;
 
+    --fs-10: 10px;
     --fs-05: 0.5rem;
     --fs-0: 1rem;
     --fs-1: 1.5rem;
     --fs-2: 2rem;
     --fs-25: 2.5rem;
+    --fs-53: 3rem;
     --fs-4: 4rem;
     --fs-5: 5rem;
     --fs-17: 17px;
@@ -47,13 +49,13 @@ body {
         margin-right: 1rem;
         padding: 0.5rem;
         font-family: var(--ff-primary);
-        font-size: var(--fs-1);
+        font-size: var(--fs-05);
         color: var(--cl-fff);
-        gap: 2rem;
     }
 
     .top-menu a {
         color: var(--cl-fff);
+        font-size: var(--fs-0);
     }
 
     .hamburger {
@@ -305,11 +307,13 @@ body {
         box-shadow: 0px -1px 17px -8px rgba(66, 68, 90, 1);
         border-radius: 1rem;
         width: 900px;
+        height: 353px;
     }
 
     .img-br-1rem img {
         width: 500px;
         border-radius: 10px;
+        aspect-ratio: 9/9;
     }
 
     .card-flex p {
@@ -322,17 +326,19 @@ body {
 
     .card-components p {
         font-family: var(--ff-secondary);
-        font-size: var(--fs-17);
+        font-size: var(--fs-0);
         color: var(--cl-black);
         opacity: 50%;
         font-weight: var(--fw-400);
+        margin: 10px;
     }
 
     .card-components h4 {
         font-family: var(--ff-secondary);
         color: var(--cl-black);
-        font-size: var(--fs-26);
+        font-size: var(--fs-1);
         font-weight: var(--fw-500);
+        margin: 0;
     }
 
     .blue-but {
@@ -468,83 +474,68 @@ body {
         padding: 5px;
     }
 
-    /* footer {
-        display: block;
+    .footer-one-background img {
+       position: absolute;
+       width: 100%;
+       
     }
 
-    .footer-img img {
+    .footer-content-text {
         position: relative;
-        top: 1rem;
-        width: 100%;
-        height: auto;
+        bottom: 6rem;
+        margin: 0;
     }
 
-    .img-iphone13 img {
-        position: relative;
-        left: 10rem;
-        bottom: 20rem;
-    }
-
-    .footer-content {
-        position: relative;
-        left: 10rem;
-        bottom: 2rem;
-    }
-
-    .footer-content h3 {
+    .footer-content-text h1 {
         color: var(--cl-fff);
         font-family: var(--ff-primary);
-        position: relative;
-        bottom: 25rem;
+        font-size: var(--fs-53);
+
     }
 
-    .footer-content p {
+    .footer-content-text p {
         color: var(--cl-fff);
         font-family: var(--ff-primary);
-        position: relative;
-        left: 1rem;
-        bottom: 25rem;
+        font-size: var(--fs-10);
     }
 
-    .footer-contact {
+    .footer-content-one img {
         position: relative;
-        right: 16rem;
-        top: 8rem;
-
-
+       max-width: 200px;
     }
 
-    .footer-paragraph-padd3 {
+    .footer-content-one {
+        position: relative;
+        margin-top: 5rem;
+       top: 6.4rem;
+       
+    }
+    
+    .footer-line-or {
+       
+    }
 
+    .footer-store-app img {
+      
+        
+    }
+
+    .button-mobile {
+        background-color: var(--cl-fff);
+        opacity: 40%;
+        border: none;
+        border-radius: 17px;
+        padding: 10px 15px;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        transition-duration: 0.4s;
         vertical-align: middle;
+        text-align: center;
+
     }
 
-    .footer-form p {
-        color: var(--cl-fff);
-        font-family: var(--ff-primary);
-    }
-
-    .footer-contact-column {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: 7rem;
-        bottom: 23rem;
-    }
-
-    .footer-apps {
-        position: relative;
-        bottom: 21rem;
-        left: 14rem;
-    }
-
-    .footer-paragraph-padd3 {
-        position: relative;
-        bottom: 24rem;
-        left: 11rem;
-    }
-
-    .button {
+    .button-email {
         background-color: var(--cl-fff);
         opacity: 40%;
         border: none;
@@ -558,143 +549,36 @@ body {
         text-align: center;
     }
 
-    .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-    }
-
-    .button span::after {
-        content: '';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-    }
-
-    .button:hover span:after {
-        opacity: 1;
-        right: 0;
-    }
-
-    .mobile-btn:hover {
-        color: var(--cl-blue);
-        background-color: var(--cl-fff);
-    }
-
-    .email-btn:hover {
-        color: var(--cl-blue);
-    }
-
-    .info {
-        position: relative;
-    }
-
-    .button .mobile-btn:hover {
-        visibility: hidden;
-    }
-
-    .info:after {
-        content: 'Enter your phone number to receive a text with a link to download the app. ';
-        display: none;
-        position: absolute;
-    }
-
-    .info {
-        color: var(--cl-fff);
-        font-family: var(--ff-primary);
-        font-weight: var(--fw-400);
-        font-size: var(--fs-0);
-    }
-
-    .footer-input {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.40);
-        backdrop-filter: blur(16px);
-        border-radius: var(--fs-1);
-        width: 100%;
-        color: var(--cl-fff);
-        gap: 1rem;
-        padding: 0.5rem;
-    } */
-
-    /* .footer-input button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2rem;
+    .footer-input input {
+        text-align: left;
         border: none;
-        gap: 10px;
-        padding: 10px;
-        width: 40%;
-        position: relative;
-        right: 1rem;
-        color: var(--cl-blue);
-        font-weight: var(--fw-700);
-        font-size: var(--fs-0);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        color: var(--cl-fff);
         cursor: pointer;
-    } */
+        opacity: 40%;
+        background-color: var(--cl-fff);
+        width: 25rem;
+    }
 
-    /* .footer-paragraph-padd3 p {
-        color: var(--cl-fff);
-        text-align: center;
+    .search-button {
+        background-color: var(--cl-fff);
+        border: none;
+        border-radius: 17px;
+        padding: 8px 8px;
+        width: 120px;
+        position: relative;
+        right: 10rem;
+        color: var(--cl-blue);
+        font-weight: bold;
         font-family: var(--ff-primary);
-        font-size: var(--fs-0);
     }
+   
 
-    .footer-apps a {
+    .footer-store-app a {
+        max-width: 200px;
         padding: 1rem;
-    } */
-
-    /* .footer-area-black {
-        background-color: var(--cl-black);
-        position: relative;
-        bottom: 20rem;
-        justify-content: space-between;
-        align-items: center;
-    } */
-
-    /* .footer-card h1 {
-        color: var(--cl-fff);
-        margin-left: 4rem;
     }
-
-    .footer-card {
-        color: var(--cl-gray);
-        background-color: var(--cl-black);
-        padding: 1rem;
-    } */
-
-    /* .footer-card-end {
-        position: relative;
-        bottom: 21rem;
-        background-color: var(--cl-black);
-    } */
-
-    /* .card-end {
-        color: var(--cl-gray);
-        position: relative;
-        left: 15rem;
-    } */
-/* 
-    .border-1px {
-        border: solid 1px;
-        text-align: center;
-        width: 10%;
-        padding: 5px;
-        color: var(--cl-gray);
-    } */
-
-    /* .card-end-position {
-        position: relative;
-        left: 25rem;
-        bottom: 5rem;
-        gap: 2rem;
-    } */
-
+   
+   
 }
-
