@@ -313,7 +313,6 @@ body {
     .img-br-1rem img {
         width: 500px;
         border-radius: 10px;
-        aspect-ratio: 9/9;
     }
 
     .card-flex p {
@@ -506,13 +505,12 @@ body {
 
     .footer-content-one {
         position: relative;
-        margin-top: 5rem;
        top: 6.4rem;
-       
+       margin: 0;
     }
     
     .footer-line-or {
-       
+       padding: 1rem;
     }
 
     .footer-store-app img {
@@ -520,7 +518,7 @@ body {
         
     }
 
-    .button-mobile {
+    .mobile-btn {
         background-color: var(--cl-fff);
         opacity: 40%;
         border: none;
@@ -535,7 +533,7 @@ body {
 
     }
 
-    .button-email {
+    .email-btn {
         background-color: var(--cl-fff);
         opacity: 40%;
         border: none;
@@ -576,9 +574,80 @@ body {
    
 
     .footer-store-app a {
-        max-width: 200px;
+        max-width: fit-content;
         padding: 1rem;
     }
+
+    .footer {
+        margin-top: 5rem;
+    }
+
+    .footer-section-two {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: var(--cl-black);
+        top: 6.4rem;
+        color: var(--cl-gray);
+    }
+
+    .footer-section-two h3 {
+        color: var(--cl-fff);
+    }
    
-   
+}
+
+@media (min-width: 1440px) {
+    .footer-content-one {
+        top: 16.7rem;
+        position: relative;
+        margin: 0;
+    }
+
+    .footer {
+        margin-top: 5rem;
+    }
+
+    .footer-line-or {
+        padding: 1rem;
+    }
+
+    .footer-section-two {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: var(--cl-black);
+        top: 16.7rem;
+        color: var(--cl-gray);
+    }
+}
+
+@media (min-width: 2560px) {
+    .footer-content-one {
+        position: relative;
+        right: 29rem;
+        top: 30.9rem;
+        
+    }  
+    
+    .footer-content-one img {
+        max-width: fit-content;
+    }
+
+    .footer {
+        margin-top: 5rem;
+    }
+
+    .footer-section-two {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: var(--cl-black);
+        top: 31rem;
+        color: var(--cl-gray);
+    }
+
 }
